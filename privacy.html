@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Privacy policy for the privately operated Ukraine OSINT Archive utility.">
+  <title>Privacy Policy — Ukraine OSINT Archive</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="./">Ukraine OSINT Archive</a><nav class="nav" aria-label="Main navigation"><a href="./">Overview</a><a href="./privacy.html" aria-current="page">Privacy policy</a></nav></div></header>
+<main class="wrap">
+  <div class="eyebrow">Privacy and data handling</div>
+  <h1>Privacy policy</h1>
+  <p class="lead">Effective 15 November 2026. This notice describes the personal-use Ukraine OSINT Archive utility, its Google API access, and this public information website.</p>
+  <section class="detail"><h2>Who operates the utility</h2><p>Ukraine OSINT Archive is maintained by an individual for private, non-commercial open-source research. The public operator contact is available through <a href="https://github.com/jklars92-star" rel="noopener noreferrer">the operator's GitHub profile</a>. It is not an official Google, GitHub, or Bellingcat product.</p></section>
+  <section class="detail"><h2>Information accessed</h2>
+    <ul class="compact"><li><strong>Google Sheets:</strong> a service account accesses a specifically shared archive queue, including submitted source URLs, processing statuses, metadata, archived links and cryptographic hashes when available.</li><li><strong>Google Drive:</strong> a user-authorized OAuth connection requests the <code>https://www.googleapis.com/auth/drive</code> scope. This scope permits broad Drive file access; it is <strong>not technically restricted</strong> to the archive folder. The intended operation is saving and checking evidence files in the operator's designated private folder.</li><li><strong>Source websites:</strong> Bellingcat Auto Archiver may access public posts, webpages, video/image content, timestamps, page text and source-specific metadata to make preservation copies.</li><li><strong>GitHub:</strong> repository configuration and GitHub Actions process archive jobs; operational logs may include submitted URLs, status messages and non-secret diagnostic metadata.</li></ul>
+  </section>
+  <section class="detail"><h2>Why and how information is used</h2><p>Google user data is used solely to operate the user's requested archiving workflow: read the private source queue, save retrieved evidence to Google Drive, update status and source references, and verify saved files. It is not used for advertising, profiling, resale, or development of unrelated services.</p><p>OAuth tokens and service-account credentials are stored as encrypted GitHub Actions repository secrets and are materialized temporarily during a job. Archived evidence and queue records are not deliberately published by this website.</p></section>
+  <section class="detail"><h2>Storage, sharing and retention</h2><p>Archive files and metadata are stored in the operator's Google Drive and Google Sheets accounts, under their sharing permissions. GitHub processes workflow code and retains job logs according to GitHub's applicable retention rules. Source websites and software dependencies necessarily receive ordinary network requests when material is fetched. There is no routine public disclosure or sale of Google user data.</p><p>The operator controls retention of archived files and queue records and may retain them until manually deleted. Deleting an item from one service does not automatically remove its copies from other services or existing provider logs.</p></section>
+  <section class="detail"><h2>Security and user control</h2><p>The research repository and archive folder are private. Access credentials are not embedded in public website files. To stop future access, the operator can disable GitHub Actions jobs, revoke the Google OAuth grant in Google Account security settings, remove the service account's permission from the archive sheet, and delete or rotate stored GitHub Actions secrets.</p><p>Because the Drive OAuth scope is broad, the operator should only grant authorization after reviewing the consent screen and can revoke it at any time.</p></section>
+  <section class="detail"><h2>About this website</h2><p>These static pages have no application login, analytics scripts, tracking pixels, forms, cookies set by site code or embedded archive content. GitHub Pages and the browser/network infrastructure may process normal access logs under their own policies.</p></section>
+  <section class="detail"><h2>Changes and inquiries</h2><p>This policy may be updated if the archiving workflow or data practices change. The revision date will be updated on this page. For questions, contact the operator via the <a href="https://github.com/jklars92-star" rel="noopener noreferrer">public GitHub profile</a>.</p></section>
+</main>
+<footer class="footer"><div class="wrap"><span>Ukraine OSINT Archive · Personal use</span><span><a href="./">Overview</a> · Updated 15 November 2026</span></div></footer>
+</body>
+</html>
