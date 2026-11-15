@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Public information page for a private-use Ukraine OSINT evidence archiving utility.">
+  <meta name="robots" content="index,follow">
+  <title>Ukraine OSINT Archive — Personal research utility</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="./">Ukraine OSINT Archive</a><nav class="nav" aria-label="Main navigation"><a href="./" aria-current="page">Overview</a><a href="./privacy.html">Privacy policy</a></nav></div></header>
+<main class="wrap">
+  <div class="eyebrow">Personal-use research infrastructure</div>
+  <h1>Preserving online evidence for careful verification.</h1>
+  <p class="lead">Ukraine OSINT Archive is a privately managed utility that helps its operator preserve publicly available web pages and media for open-source research. It uses Bellingcat Auto Archiver with Google Sheets as an archive queue and Google Drive for private evidence storage.</p>
+  <div class="notice"><p><strong>Information page only.</strong> This site is not a public search engine, does not host archived material, and does not provide third parties with access to the operator's Google Drive or research records.</p></div>
+  <section class="grid" aria-label="How the utility works">
+    <article class="panel"><h2>1. Queue sources</h2><p>The operator enters source URLs into a dedicated private Google Sheet. The archive queue is separate from other research trackers.</p></article>
+    <article class="panel"><h2>2. Preserve evidence</h2><p>A private GitHub Actions workflow invokes Bellingcat Auto Archiver to retrieve supported public content, screenshots and relevant metadata.</p></article>
+    <article class="panel"><h2>3. Store privately</h2><p>Captured files are stored in the operator's private Google Drive folder. The archive queue records statuses, source references and, when available, file links and hashes.</p></article>
+    <article class="panel"><h2>4. Review provenance</h2><p>Saved material supports human source verification and comparison. Archiving a claim does <em>not</em> independently establish that the claim is true.</p></article>
+  </section>
+  <section class="detail"><h2>Google access and data practices</h2><p>A service account is granted access to the dedicated archive spreadsheet. A separate user-authorized Google OAuth integration uses the broad Google Drive scope to create archive files. This scope is not restricted to the archive folder, even though that is the intended storage destination.</p><p>This website itself does not sign users in, request Google data, run analytics, or collect form submissions. <a href="./privacy.html">Read the privacy policy</a> for the complete disclosure of storage, permissions, retention and revocation.</p></section>
+  <section class="detail"><h2>Operator and project context</h2><p>This is a non-commercial, single-user utility maintained for independent open-source research. It is not affiliated with Google, GitHub or Bellingcat.</p><p>For a general inquiry, see the <a href="https://github.com/jklars92-star" rel="noopener noreferrer">operator's public GitHub profile</a>. No private repository, credential file or archived evidence is linked here.</p></section>
+</main>
+<footer class="footer"><div class="wrap"><span>Ukraine OSINT Archive · Personal use</span><span><a href="./privacy.html">Privacy policy</a> · Updated 15 November 2026</span></div></footer>
+</body>
+</html>
